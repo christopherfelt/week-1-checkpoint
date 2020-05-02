@@ -1,0 +1,167 @@
+@font-face {
+  font-family: dosis-regular;
+  src: url(fonts/dosis/Dosis-Regular.ttf);
+}
+
+@font-face {
+  font-family: dosis-bold;
+  src: url(fonts/dosis/Dosis-Bold.ttf);
+}
+
+@font-face {
+  font-family: opensans-regular;
+  src: url(fonts/opensans/OpenSans-Regular.ttf);
+}
+
+:root {
+  --dark-green: #114b5f;
+  --med-green: #1a936f;
+  --light-green: #88d498;
+  --gray-green: #c6dabf;
+  --off-white: #f3e9d2;
+}
+
+body {
+  font-family: opensans-regular;
+}
+
+/* temps (remove) */
+
+/* * {
+  outline: 1px solid red;
+} */
+
+/* utilities */
+
+.dosis {
+  font-family: dosis-regular;
+}
+
+.dosis-bold {
+  font-family: dosis-bold;
+}
+
+.dark-green-bg {
+  background-color: var(--dark-green);
+}
+
+.dark-green-text {
+  color: var(--dark-green);
+}
+
+.med-green-bg {
+  background-color: var(--med-green);
+}
+
+.med-green-text {
+  color: var(--med-green);
+}
+
+.light-green-bg {
+  background-color: var(--light-green);
+}
+
+.gray-green-bg {
+  background-color: var(--gray-green);
+}
+
+.off-white-bg {
+  background-color: var(--off-white);
+}
+
+.off-white-text {
+  color: var(--off-white);
+}
+
+.font-size-xl {
+  font-size: xx-large;
+}
+
+.font-size-sm {
+  font-size: small;
+}
+
+.font-size-md {
+  font-size: medium;
+}
+
+/* specific */
+
+.image-con-height {
+  height: 800px;
+}
+
+.top-bg-img {
+  background: url(solar-panels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.see-through {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.see-through:hover {
+  opacity: 0.99;
+}
+
+.green-left-border {
+  border-left: 10px solid var(--med-green);
+}
+
+.sm-hidden {
+  display: block;
+}
+
+@media only screen and (max-width: 576px) {
+  .sm-hidden {
+    display: none;
+  }
+}
+
+.image-text-pos {
+  position: absolute;
+  top: 26%;
+  left: 20%;
+}
+
+.image-text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+
+.overflow-con-height {
+  height: 300px;
+}
+
+.overflow-pos {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 576px) {
+  .overflow-pos {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.icon-size-sm {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .icon-size-sm {
+    font-size: 0.5rem;
+  }
+}
+
+q::before {
+  content: "“";
+}
+footer {
+  height: 60px;
+  background-color: gray;
+}
