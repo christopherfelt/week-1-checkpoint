@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+      name="viewport"
+    />
     <title>Solar Power</title>
     <link
       rel="stylesheet"
@@ -11,19 +15,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="med-green-bg">
-    <header class="container-fluid sticky-top med-green-bg">
-      <div class="row text-center text-lg-left pl-lg-2 py-2">
-        <div class="col-sm-6">
-          <i class="fas fa-solar-panel fa-2x"></i
-          ><span class="ml-3 dosis-bold font-size-xl off-white-text"
-            >Solar Panels</span
-          >
-        </div>
-        <div class="col-sm-6 align-self-center dosis-bold d-none d-md-block">
-          <div class="d-inline mr-3">
-            <a id="demo" href="#">Demo</a>
+    <header class="sticky-top">
+      <div class="container-fluid med-green-bg">
+        <div class="row text-center text-lg-left pl-lg-2 py-2">
+          <div class="col-sm-6">
+            <i class="fas fa-solar-panel fa-2x"></i
+            ><span class="ml-3 dosis-bold font-size-xl off-white-text"
+              >Solar Panels</span
+            >
           </div>
-          <div class="d-inline"><a id="reviews" href="#">Reviews</a></div>
+          <div class="col-sm-6 align-self-center dosis-bold d-none d-md-block">
+            <div class="d-inline mr-3">
+              <a
+                id="demo"
+                href="#"
+                onclick="window.scrollTo({
+                  top: 1200,
+                  behavior: 'smooth'
+                });"
+                >Demo</a
+              >
+            </div>
+            <div class="d-inline">
+              <a
+                id="reviews"
+                href="#"
+                onclick="window.scrollTo({
+                  top:1600,
+                  behavior: 'smooth'
+              })"
+                >Reviews</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -315,5 +339,5 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
-  <script src="app.js"></script>
+  <!-- <script src="app.js"></script> -->
 </html>
