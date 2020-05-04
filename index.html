@@ -11,13 +11,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="med-green-bg">
-    <header
-      class="sticky-top text-center text-lg-left med-green-bg pl-lg-2 py-2"
-    >
-      <i class="fas fa-solar-panel fa-2x"></i
-      ><span class="ml-3 dosis-bold font-size-xl off-white-text"
-        >Solar Panels</span
-      >
+    <header class="container-fluid sticky-top med-green-bg">
+      <div class="row text-center text-lg-left pl-lg-2 py-2">
+        <div class="col-sm-6">
+          <i class="fas fa-solar-panel fa-2x"></i
+          ><span class="ml-3 dosis-bold font-size-xl off-white-text"
+            >Solar Panels</span
+          >
+        </div>
+        <div class="col-sm-6 align-self-center dosis-bold d-none d-md-block">
+          <div class="d-inline mr-3">
+            <a id="demo" href="#">Demo</a>
+          </div>
+          <div class="d-inline"><a id="reviews" href="#">Reviews</a></div>
+        </div>
+      </div>
     </header>
     <main>
       <!-- background-image -->
@@ -27,7 +35,7 @@
             <h4 class="font-weight-bold text-center text-lg-left">
               Contact Us
             </h4>
-            <div class="card rounded see-through gray-green-bg">
+            <div id="go-ghost" class="card rounded see-through gray-green-bg">
               <div class="card-body">
                 <h6 class="card-title">
                   Want a quote or have a question? Let us know!
@@ -86,38 +94,38 @@
               collaborative thinking to further the overall value proposition.
             </p>
           </div>
-          <div class="col-sm-6 mb-3 order-1 overflow-pos">
+          <div class="col-md-6 col-lg-5 mb-2 order-1 overflow-pos">
             <div class="card">
               <div class="card-body">
                 <div class="row">
                   <div class="col-1 icon-size-sm dark-green-text">
                     <i class="fas fa-cog fa-2x"></i>
                   </div>
-                  <div class="col">
-                    <p class="d-inline font-size-md">
+                  <div class="col font-size-res-md">
+                    <p class="d-inline">
                       This assessment estimated that most zirconium- and
                       hafnium-bearing minerals have one of only one had a
                       detection frequency greater than 1 percent lead.
                     </p>
                   </div>
                 </div>
-                <div class="row py-1">
+                <div class="row">
                   <div class="col-1 icon-size-sm dark-green-text">
                     <i class="fas fa-leaf fa-2x"></i>
                   </div>
                   <div class="col">
-                    <p class="d-inline font-size-md">
+                    <p class="d-inline font-size-res-md">
                       We will compare this recovery to the three
                       confined-aquifer wells and 25 coalbed natural gas liquids.
                     </p>
                   </div>
                 </div>
-                <div class="row py-1">
+                <div class="row">
                   <div class="col-1 icon-size-sm dark-green-text">
                     <i class="fas fa-sun fa-2x"></i>
                   </div>
                   <div class="col">
-                    <p class="d-inline font-size-md">
+                    <p class="d-inline font-size-res-md">
                       High concentrations of dissolved solids may also be
                       severely impacted. Therefore, decreases in water and
                       regional runoff estimates.
@@ -129,7 +137,7 @@
                     <i class="fas fa-wrench fa-2x"></i>
                   </div>
                   <div class="col">
-                    <p class="d-inline font-size-md">
+                    <p class="d-inline font-size-res-md">
                       Recommendations for model testing and development drilling
                       rules out new discoveries of large uncertainties
                       associated with each set of surface water are limited.
@@ -142,22 +150,29 @@
         </div>
       </div>
       <!-- image-big-text-section -->
-      <div class="container-fluid off-white-bg">
+      <div id="demo_pos" class="container-fluid off-white-bg">
         <div class="row py-3 h-100">
           <div class="col-sm-6 align-self-center d-flex justify-content-center">
             <div class="w-75 shadow">
-              <img
-                src="house1.jpg"
-                class="img-fluid rounded-top border-bottom"
-                alt=""
-              />
-              <img src="house2.jpg" class="img-fluid rounded-bottom" alt="" />
+              <div class="embed-responsive embed-responsive-4by3 rounded-top">
+                <iframe src="https://www.youtube.com/embed/3Xpzv8Yz2PI">
+                </iframe>
+              </div>
+              <div
+                class="embed-responsive embed-responsive-4by3 rounded-bottom"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/2rCKYm1BJYY"
+                ></iframe>
+              </div>
             </div>
           </div>
           <div class="col-sm-6 align-self-center text-center text-md-left">
             <div class="py-2">
-              <i class="fas fa-check-circle fa-2x"></i>
-              <h2 class="d-inline my-2">
+              <div class="d-inline icon-size-sm">
+                <i class="fas fa-check-circle fa-2x"></i>
+              </div>
+              <h2 class="d-inline my-2 shrink-text-size-md">
                 Environmental Standards - Best Practices
               </h2>
             </div>
@@ -175,59 +190,104 @@
         </div>
       </div>
       <!-- three-card-section -->
-      <div class="conainer-fluid bg-white">
+      <div id="reviews_pos" class="conainer-fluid bg-white">
         <div
-          class="row h-100 align-items-center d-flex justify-content-around my-3 py-3"
+          class="row h-100 align-items-center d-flex justify-content-around py-2 py-md-5"
         >
-          <div class="col-sm-3">
-            <div class="card off-white-bg">
-              <div class="card-body">
+          <div class="col-md-4 col-lg-3 order-md-1 order-2 py-2 py-md-0">
+            <div class="card bg-white shadow">
+              <div class="card-body text-center">
                 <blockquote class="quote">
-                  <q>
+                  <q class="font-weight-bold">
                     Decreases in the past 10 years under either climate
                     scenario. The spatial and temporal distribution of natural
                     hot water.
                   </q>
                 </blockquote>
-                <p class="card-text">Text</p>
+                <div class="d-flex justify-content-center">
+                  <div class="card-cite-border"></div>
+                </div>
+                <p class="card-text med-green-text dosis-bold">
+                  Solar Panel Installation Organization
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
+          <div class="col-md-4 col-lg-3 order-md-2 order-1 py-2 py-md-0">
+            <div class="card bg-white shadow">
+              <div class="card-body text-center">
+                <div class="mb-2 light-green-text">
+                  <i class="fas fa-sun fa-2x"></i>
+                  <i class="fas fa-sun fa-2x"></i>
+                  <i class="fas fa-sun fa-2x"></i>
+                  <i class="fas fa-sun fa-2x"></i>
+                </div>
                 <blockquote class="quote">
-                  <q>
+                  <q class="font-weight-bold">
                     As such, agriculture is one in an area focused on the lake
                     has a history of petroleum refining, and cerium-based
-                    catalysts are needed at ungaged locations near a streamgage
-                    location on the limited number of oil and gas development
-                    were wholly or partially within the enclosure.
+                    catalysts.
                   </q>
                 </blockquote>
-                <p class="card-text">Text</p>
+                <div class="d-flex justify-content-center">
+                  <div class="card-cite-border"></div>
+                </div>
+                <p class="card-text med-green-text dosis-bold">
+                  Solar Panel Research Institute
+                </p>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card">
-              <div class="card-body">
+          <div class="col-md-4 col-lg-3 order-md-3 order-3 py-2 py-md-0">
+            <div class="card bg-white shadow">
+              <div class="card-body text-center">
                 <blockquote class="quote">
-                  <q>
+                  <q class="font-weight-bold">
                     Nitrate plus nitrite yields from basins that were originally
                     masked by variability in these proceedings.
                   </q>
                 </blockquote>
-                <p class="card-text">Text</p>
+                <div class="d-flex justify-content-center">
+                  <div class="card-cite-border"></div>
+                </div>
+                <p class="card-text med-green-text dosis-bold">
+                  Monthly Solar Panel Review
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- last-text-section -->
-      <div class="container"></div>
+      <div class="container">
+        <div class="row py-2">
+          <div class="col">
+            <div class="jumbotron med-green-bg off-white-text">
+              <h1 class="display-4">Money Back Guarantee!</h1>
+              <p class="lead">
+                This assessment estimated that between 12 and metolachlor with
+                11 downward trends in annual mean precipitation or snow shadow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="container-fluid off-white-bg dark-green-text">
+      <div class="row d-flex justify-content-center py-3">
+        <div class="co-sm-3"><h5>Contact Us:</h5></div>
+        <div class="col-sm-5 text-center text-md-left">
+          <div class="d-inline">
+            <i class="fas fa-phone"></i>
+            <p class="d-inline">Phone: 208-123-4567</p>
+          </div>
+          <div class="d-inline">
+            <i class="fas fa-envelope"></i>
+            <p class="d-inline">Email: solarpanel@solarpanels.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script
     defer
@@ -241,6 +301,11 @@
     crossorigin="anonymous"
   ></script>
   <script
+    src="https://code.jquery.com/jquery-3.5.0.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"
+  ></script>
+  <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"
@@ -250,4 +315,5 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"
   ></script>
+  <script src="app.js"></script>
 </html>
